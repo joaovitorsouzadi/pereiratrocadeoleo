@@ -182,7 +182,7 @@
 
     /* TRANSIÇÕES PARA BOTÕES FLUTUANTES */
     #floatingWaContainer, #scrollDownIndicator {
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+      transition: transform 0.15s ease-out, opacity 0.3s ease;
     }
   </style>
 </head>
@@ -328,7 +328,7 @@
               <span class="text-[11px] font-black text-slate-800 uppercase font-display tracking-wider">Avaliar</span>
             </a>
             
-            <!-- Botão Chave PIX com Ícone Oficial Perfeito -->
+            <!-- Botão Chave PIX com Ícone Oficial -->
             <button onclick="openPixModal()" class="flex flex-col items-center justify-center p-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl transition-all text-center shadow-sm hover:scale-105">
               <svg class="w-5 h-5 text-teal-600 fill-current shrink-0 mb-1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                 <g fill="currentColor" fill-rule="evenodd">
@@ -402,10 +402,8 @@
         <div class="absolute left-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         <div class="absolute right-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
         
-        <!-- CARROSSEL INTERATIVO COM TOUCH/DRAG E AUTO-RETORNO -->
         <div id="marcasCarousel" class="flex gap-4 overflow-x-auto scrollbar-hide py-2 px-5 select-none cursor-grab active:cursor-grabbing">
           
-          <!-- Lista de Logos -->
           <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/shell.png" alt="Shell" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
           <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mobil.png" alt="Mobil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
           <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/texaco.png" alt="Texaco / Havoline" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
@@ -429,7 +427,7 @@
           <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/bosch.svg" alt="Bosch" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
           <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mahle.png" alt="Mahle" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
 
-          <!-- Duplicado para loop de rolagem perfeito -->
+          <!-- Duplicado para efeito de loop infinito -->
           <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/shell.png" alt="Shell" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
           <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mobil.png" alt="Mobil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
           <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/texaco.png" alt="Texaco / Havoline" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
@@ -540,7 +538,7 @@
       </div>
     </section>
 
-    <!-- GALERIA / FOTOS DA ESTRUTURA -->
+    <!-- GALERIA DE FOTOS DA ESTRUTURA (FOTOS DO 1.WEBP ATÉ O 10.WEBP DO GITHUB) -->
     <section id="servicos" class="w-full py-12 bg-white border-t border-b border-slate-200 reveal">
       <div class="max-w-6xl mx-auto px-5 mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
         <div>
@@ -557,7 +555,7 @@
         <div class="absolute left-0 top-0 bottom-0 w-8 md:w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         <div class="absolute right-0 top-0 bottom-0 w-8 md:w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
         <div id="storeCarousel" class="flex gap-4 overflow-x-auto scrollbar-hide py-3 px-5 select-none cursor-grab active:cursor-grabbing">
-          <!-- Gerado dinamicamente via JS -->
+          <!-- Gerado dinamicamente via JS com as imagens do repositório -->
         </div>
       </div>
     </section>
@@ -644,7 +642,7 @@
       </div>
     </section>
 
-    <!-- LOCALIZAÇÃO E CONTATO COM MAPA EMBUTIDO -->
+    <!-- LOCALIZAÇÃO E CONTATO COM MAPA EMBUTIDO EM MODO SATÉLITE -->
     <section id="localizacao" class="max-w-6xl mx-auto px-5 py-8 reveal">
       <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-xl flex flex-col lg:flex-row">
         
@@ -675,12 +673,12 @@
           </div>
         </div>
 
-        <!-- Mapa do Google Embutido -->
+        <!-- MAPA DO GOOGLE EMBUTIDO EM VISÃO DE SATÉLITE (t=k&z=17) -->
         <div class="lg:w-1/2 h-64 lg:h-auto min-h-[280px] bg-slate-100 relative border-t lg:border-t-0 lg:border-l border-slate-200">
           <iframe 
-            title="Mapa da Pereira Troca de Óleo"
-            src="https://maps.google.com/maps?q=Av.+Humberto+Mendon%C3%A7a,+Palmeiras+de+Goi%C3%A1s+-+GO&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-            class="w-full h-full border-0 filter contrast-105 opacity-90" 
+            title="Mapa da Pereira Troca de Óleo Satélite"
+            src="https://maps.google.com/maps?q=Pereira+Troca+de+%C3%93leo,+Avenida+Humberto+Mendon%C3%A7a,+Palmeiras+de+Goi%C3%A1s+-+GO&t=k&z=17&ie=UTF8&iwloc=&output=embed" 
+            class="w-full h-full border-0" 
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">
@@ -689,7 +687,7 @@
       </div>
     </section>
 
-    <!-- RODAPÉ COM CRÉDITOS -->
+    <!-- RODAPÉ COM CRÉDITOS E BOTÃO DE ORIENTAÇÃO PARA O DONO -->
     <footer class="bg-slate-900 text-white py-12 px-5 text-center border-t border-slate-800 relative z-10">
       <div class="max-w-6xl mx-auto flex flex-col items-center gap-5">
         <div class="h-14">
@@ -704,7 +702,16 @@
           <p>&copy; <span id="currentYear"></span> Pereira Troca de Óleo. Todos os direitos reservados.</p>
         </div>
 
-        <div class="pt-4 border-t border-slate-800 text-[11px] text-slate-400 font-sans leading-relaxed">
+        <!-- BOTÃO DE ORIENTAÇÃO DE USO PARA O PROPRIETÁRIO DO SITE -->
+        <div class="pt-3 border-t border-slate-800/80 w-full max-w-md flex flex-col items-center gap-2">
+          <a href="https://jovi.short.gy/orientacao" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-brand-greenLight border border-slate-700 hover:border-brand-green text-[11px] font-bold rounded-xl transition-all font-sans inline-flex items-center gap-2 shadow-sm group">
+            <i class="fa-solid fa-graduation-cap text-sm text-brand-greenLight group-hover:scale-110 transition-transform"></i>
+            <span>Orientação de Uso do Site (Área do Dono)</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-slate-400"></i>
+          </a>
+        </div>
+
+        <div class="pt-2 text-[11px] text-slate-400 font-sans leading-relaxed">
           <p>
             Desenvolvido por <span class="text-slate-200 font-semibold">João Vitor S N</span> • 
             <a href="https://jovidigital.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-brand-greenLight hover:text-white font-bold underline transition-colors inline-flex items-center gap-1">
@@ -716,14 +723,14 @@
     </footer>
 
     <!-- INDICADOR FLUTUANTE DISCRETO PARA ROLAR PARA BAIXO -->
-    <div id="scrollDownIndicator" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-30 transition-all duration-500 opacity-100 pointer-events-auto">
+    <div id="scrollDownIndicator" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-30 transition-all duration-300 opacity-100 pointer-events-auto">
       <a href="#servicos" class="flex items-center gap-2 px-3.5 py-1.5 bg-slate-900/90 hover:bg-slate-900 border border-brand-green text-brand-greenLight rounded-full shadow-2xl backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider transition-all hover:scale-105 active:scale-95 group">
         <span class="text-slate-200 group-hover:text-brand-greenLight transition-colors">Ver Mais</span>
         <i class="fa-solid fa-chevron-down text-brand-greenLight animate-bounce text-[10px]"></i>
       </a>
     </div>
 
-    <!-- BOTÃO FLUTUANTE MULTI-CONTATO WHATSAPP (SISTEMA DE EVITAÇÃO DO RODAPÉ) -->
+    <!-- BOTÃO FLUTUANTE MULTI-CONTATO WHATSAPP (SISTEMA DE ELEVAÇÃO DINÂMICA ANTI-SOBREPOSIÇÃO) -->
     <div id="floatingWaContainer" class="fixed bottom-6 right-6 z-40 flex flex-col items-end transition-all duration-300">
       
       <!-- MENU EXPANSÍVEL -->
@@ -769,7 +776,7 @@
       <!-- Conteúdo do Modal PIX -->
       <div class="p-5 overflow-y-auto space-y-4 text-xs font-sans">
         
-        <!-- CARD DE DADOS DO FAVORECIDO (SUPER LEGÍVEL) -->
+        <!-- CARD DE DADOS DO FAVORECIDO -->
         <div class="p-4 bg-slate-50 border-2 border-emerald-200 rounded-2xl space-y-2 text-xs font-mono text-slate-800">
           <div class="flex items-center justify-between border-b border-slate-200 pb-2">
             <span class="text-slate-500 uppercase text-[10px] font-bold">Chave PIX (CNPJ):</span>
@@ -966,13 +973,18 @@
     const siteUrl = window.location.href;
     let deferredPrompt = null;
 
-    // FOTOS DA ESTRUTURA E SERVIÇOS
+    // FOTOS DA ESTRUTURA E SERVIÇOS (IMAGENS DO 1.WEBP ATÉ O 10.WEBP DO GITHUB)
     const storePhotos = [
-      { id: 1, img: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80", title: "Atendimento e Troca de Óleo" },
-      { id: 2, img: "https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?auto=format&fit=crop&w=800&q=80", title: "Produtos de Alta Qualidade" },
-      { id: 3, img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80", title: "Revisão de Filtros" },
-      { id: 4, img: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80", title: "Estrutura para Carros e Camionetes" },
-      { id: 5, img: "https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=800&q=80", title: "Especialista para Motocicletas" }
+      { id: 1, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/1.webp", title: "Pereira Troca de Óleo - Imagem 1" },
+      { id: 2, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/2.webp", title: "Pereira Troca de Óleo - Imagem 2" },
+      { id: 3, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/3.webp", title: "Pereira Troca de Óleo - Imagem 3" },
+      { id: 4, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/4.webp", title: "Pereira Troca de Óleo - Imagem 4" },
+      { id: 5, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/5.webp", title: "Pereira Troca de Óleo - Imagem 5" },
+      { id: 6, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/6.webp", title: "Pereira Troca de Óleo - Imagem 6" },
+      { id: 7, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/7.webp", title: "Pereira Troca de Óleo - Imagem 7" },
+      { id: 8, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/8.webp", title: "Pereira Troca de Óleo - Imagem 8" },
+      { id: 9, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/9.webp", title: "Pereira Troca de Óleo - Imagem 9" },
+      { id: 10, img: "https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/10.webp", title: "Pereira Troca de Óleo - Imagem 10" }
     ];
 
     // SERVICE WORKER PWA
@@ -1048,7 +1060,7 @@
 
       initScrollReveal();
       generateStoreCarousel();
-      initAutoInertiaScroll('marcasCarousel', 1.2); // Velocidade do carrossel de marcas com auto-retorno
+      initAutoInertiaScroll('marcasCarousel', 1.2);
       updateStatus();
       initScrollIndicatorListener();
       initFooterAvoidanceObserver();
@@ -1078,7 +1090,7 @@
       }
     }
 
-    // EVITAÇÃO DO RODAPÉ
+    // EVITAÇÃO DINÂMICA DO RODAPÉ (O BOTÃO DE WHATSAPP ELEVA-SE EM TEMPO REAL PARA NUNCA COBRIR O RODAPÉ)
     function initFooterAvoidanceObserver() {
       const footer = document.querySelector('footer');
       const floatingWa = document.getElementById('floatingWaContainer');
@@ -1086,19 +1098,25 @@
 
       if (!footer || !floatingWa) return;
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            floatingWa.style.transform = 'translateY(-75px)';
-            if (scrollIndicator) scrollIndicator.style.transform = 'translate(-50%, -75px)';
-          } else {
-            floatingWa.style.transform = 'translateY(0px)';
-            if (scrollIndicator) scrollIndicator.style.transform = 'translate(-50%, 0px)';
-          }
-        });
-      }, { threshold: 0.05 });
+      function checkFooterOverlap() {
+        const footerRect = footer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
 
-      observer.observe(footer);
+        if (footerRect.top < windowHeight) {
+          // O rodapé entrou na tela: calcula a sobreposição exata em pixels
+          const overlap = windowHeight - footerRect.top;
+          const liftAmount = overlap + 15; // Mantém 15px de folga acima do rodapé
+          floatingWa.style.transform = `translateY(-${liftAmount}px)`;
+          if (scrollIndicator) scrollIndicator.style.transform = `translate(-50%, -${liftAmount}px)`;
+        } else {
+          floatingWa.style.transform = 'translateY(0px)';
+          if (scrollIndicator) scrollIndicator.style.transform = 'translate(-50%, 0px)';
+        }
+      }
+
+      window.addEventListener('scroll', checkFooterOverlap, { passive: true });
+      window.addEventListener('resize', checkFooterOverlap, { passive: true });
+      checkFooterOverlap();
     }
 
     function toggleWaSpeedDial() {
@@ -1203,7 +1221,7 @@
           isHoveredOrTouched = false;
           isDown = false;
           currentScroll = el.scrollLeft;
-        }, 1200); // Aguarda 1.2 segundos e retoma a rolagem automática
+        }, 1200); // Aguarda 1.2s e retoma a rolagem automática
       };
 
       el.addEventListener('mouseenter', stopAuto, { passive: true });
