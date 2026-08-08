@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth font-sans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Pereira Troca de Óleo | Palmeiras de Goiás - GO</title>
+  <meta name="description" content="Pereira Troca de Óleo e Filtros em Palmeiras de Goiás - GO. Atendimento para Carros, Camionetes e Motos. Shell, Mobil, Castrol, Tecfil, Mann-Filter e mais!">
+  
+  <!-- META TAGS OPEN GRAPH PARA PREVISÃO DE LINK NO WHATSAPP E REDES SOCIAIS -->
+  <meta property="og:site_name" content="Pereira Troca de Óleo">
+  <meta property="og:title" content="Pereira Troca de Óleo | Palmeiras de Goiás - GO">
+  <meta property="og:description" content="Especialista em Troca de Óleo e Filtros para Carros, Camionetes e Motos. Produtos de alta procedência e atendimento agilizado.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pereiratrocadeoleo.vercel.app/">
+  <meta id="ogImageTag" property="og:image" content="pereira.webp">
+  <meta id="ogImageSecureTag" property="og:image:secure_url" content="pereira.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta property="og:image:alt" content="Logo Pereira Troca de Óleo">
+
+  <!-- SCHEMA / ITEMPROP PARA GOOGLE -->
+  <meta itemprop="name" content="Pereira Troca de Óleo">
+  <meta itemprop="description" content="Troca de óleo e filtros de alta qualidade em Palmeiras de Goiás - GO.">
+  <meta id="itempropImageTag" itemprop="image" content="pereira.webp">
+
+  <!-- TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pereira Troca de Óleo | Palmeiras de Goiás">
+  <meta name="twitter:description" content="As melhores marcas de óleos, filtros e fluidos com atendimento de primeira.">
+  <meta id="twitterImageTag" name="twitter:image" content="pereira.webp">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/webp" href="pereira.webp">
+  <link rel="shortcut icon" type="image/webp" href="pereira.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="pereira.webp">
+
+  <!-- META TAGS DE APLICATIVO PARA CELULAR (PWA) -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Pereira Óleo">
+  <meta name="application-name" content="Pereira Troca de Óleo">
+  <meta name="theme-color" content="#16a34a">
+
+  <!-- MANIFESTO PWA DINÂMICO INJETADO IMEDIATAMENTE NO HEAD -->
+  <link id="manifestLink" rel="manifest" href="data:application/manifest+json;charset=utf-8,%7B%22name%22%3A%22Pereira%20Troca%20de%20%C3%93leo%22%2C%22short_name%22%3A%22Pereira%20%C3%93leo%22%2C%22start_url%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23ffffff%22%2C%22theme_color%22%3A%22%2316a34a%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22pereira.webp%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fwebp%22%2C%22purpose%22%3A%22any%20maskable%22%7D%2C%7B%22src%22%3A%22pereira.webp%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fwebp%22%2C%22purpose%22%3A%22any%20maskable%22%7D%5D%7D">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Montserrat, Red Hat Display & Syncopate -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Red+Hat+Display:wght@700;800;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            display: ['Red Hat Display', 'sans-serif'],
+            badge: ['Syncopate', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              green: '#16a34a',       // Verde Principal
+              greenLight: '#22c55e',  // Verde Claro
+              greenDark: '#15803d',   // Verde Escuro
+              dark: '#0f172a',        // Preto/Slate Escuro
+              card: '#ffffff',       
+              cardBorder: '#e2e8f0', 
+              whatsapp: '#25D366'    
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #f8fafc !important;
+      color: #0f172a !important;
+    }
+
+    /* PADRÃO DE FUNDO CLARO AUTOMOTIVO SUAVE */
+    .auto-pattern-bg {
+      position: relative;
+    }
+    .auto-pattern-bg::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -10;
+      background-color: #f8fafc;
+      background-image: 
+        radial-gradient(circle at 50% 10%, rgba(22, 163, 74, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at 90% 90%, rgba(34, 197, 94, 0.04) 0%, transparent 50%),
+        linear-gradient(27deg, #f1f5f9 5px, transparent 5px),
+        linear-gradient(207deg, #f1f5f9 5px, transparent 5px),
+        linear-gradient(117deg, #f1f5f9 5px, transparent 5px),
+        linear-gradient(297deg, #f1f5f9 5px, transparent 5px);
+      background-size: 100% 100%, 100% 100%, 12px 12px, 12px 12px, 12px 12px, 12px 12px;
+      background-position: 0 0, 0 0, 0 0, 6px 6px, 6px 0, 0 6px;
+      pointer-events: none;
+    }
+
+    .glass-header {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .green-glow {
+      box-shadow: 0 0 30px rgba(22, 163, 74, 0.25);
+    }
+
+    .green-gradient-text {
+      background: linear-gradient(135deg, #0f172a 0%, #16a34a 60%, #15803d 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .green-button-gradient {
+      background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    }
+    .green-button-gradient:hover {
+      background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-float-slow {
+      animation: floatSlow 4s ease-in-out infinite;
+    }
+
+    /* CARROSSEL DE MARCAS CONTÍNUO */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 28s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #16a34a;
+      border-radius: 3px;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      will-change: scroll-position;
+      touch-action: pan-x pan-y;
+    }
+
+    .card-photo {
+      contain: content;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+
+    /* TRANSIÇÕES PARA BOTÕES FLUTUANTES */
+    #floatingWaContainer, #scrollDownIndicator {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+    }
+  </style>
+</head>
+<body class="auto-pattern-bg text-slate-800 font-sans selection:bg-brand-green/30 selection:text-brand-green antialiased overflow-hidden">
+
+  <!-- SPLASH SCREEN DE ENTRADA -->
+  <div id="splashScreen" class="fixed inset-0 bg-white z-50 flex items-center justify-center transition-all duration-700 ease-in-out border-b-4 border-brand-green">
+    <div class="text-center flex flex-col items-center px-4 w-full max-w-sm">
+      <div id="splashLogo" class="w-48 h-48 transform scale-100 transition-all duration-700 ease-out flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-brand-green/10 rounded-full blur-2xl animate-pulse"></div>
+        <img src="pereira.webp" alt="Pereira Troca de Óleo" class="w-full h-full object-contain filter drop-shadow-[0_4px_15px_rgba(22,163,74,0.3)] relative z-10" onerror="this.src='https://via.placeholder.com/300/ffffff/16a34a?text=Pereira+Troca+de+Oleo'">
+      </div>
+      <div class="w-48 h-[6px] bg-slate-100 rounded-full mt-6 overflow-hidden relative border border-slate-200">
+        <div id="splashProgressBar" class="absolute inset-y-0 left-0 bg-gradient-to-r from-brand-greenDark via-brand-green to-brand-greenLight w-0 transition-all duration-100 ease-out"></div>
+      </div>
+      <div class="mt-3">
+        <span id="splashCounter" class="text-xs font-mono tracking-widest font-bold text-brand-green">0%</span>
+      </div>
+      <div id="splashText" class="mt-2 opacity-0 translate-y-3 transition-all duration-700">
+        <span class="font-badge text-[10px] tracking-[0.25em] text-slate-600 uppercase font-bold">[ BEM-VINDO À PEREIRA TROCA DE ÓLEO ]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div id="mainContent" class="opacity-0 transition-opacity duration-700 ease-in-out font-sans">
+    
+    <!-- HEADER FIXO COM LOGO PEREIRA -->
+    <header class="sticky top-0 z-40 w-full glass-header border-b border-slate-200 shadow-md text-slate-900">
+      <div class="max-w-6xl mx-auto px-5 h-16 md:h-20 flex items-center justify-between gap-4">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center h-12 md:h-16 shrink-0 transition-transform duration-300 hover:scale-105">
+          <img src="pereira.webp" alt="Pereira Troca de Óleo Logo" class="h-10 md:h-14 w-auto object-contain filter drop-shadow" onerror="this.src='https://via.placeholder.com/150/ffffff/16a34a?text=PEREIRA'">
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden lg:flex items-center space-x-7 text-xs uppercase tracking-widest font-black font-display text-slate-700">
+          <a href="#servicos" class="hover:text-brand-green transition-colors">Serviços</a>
+          <a href="#marcas" class="hover:text-brand-green transition-colors">Marcas</a>
+          <a href="#produtos" class="hover:text-brand-green transition-colors">Catálogo</a>
+          <a href="#pix" class="hover:text-brand-green transition-colors">Pagamento PIX</a>
+          <a href="#localizacao" class="hover:text-brand-green transition-colors">Localização</a>
+        </nav>
+
+        <!-- Ações do Header -->
+        <div class="flex items-center space-x-2">
+          <button onclick="downloadVCard()" class="px-4 h-9 rounded-full green-button-gradient text-white font-display text-[11px] md:text-xs font-black uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-md transition-all hover:scale-105 active:scale-95" title="Salvar Contato na Agenda">
+            <i class="fa-solid fa-address-book text-sm"></i>
+            <span class="inline">Salvar Contato</span>
+          </button>
+          
+          <button onclick="openShareModal()" class="p-2 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-brand-green flex items-center justify-center transition-all border border-slate-300 hover:scale-105 active:scale-95" title="Compartilhar / Baixar App">
+            <i class="fa-solid fa-share-nodes text-sm"></i>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- BANNER DE STATUS EM TEMPO REAL (HORÁRIO DE GOIÁS) -->
+    <div class="bg-slate-900 text-white text-[10px] sm:text-[11px] py-2.5 px-4 relative overflow-hidden border-b border-slate-800">
+      <div class="max-w-6xl mx-auto flex items-center justify-center gap-2 font-bold tracking-widest text-center uppercase font-mono">
+        <span id="statusIndicator" class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-[0_0_8px_#22c55e]"></span>
+        <span id="statusText" class="font-display font-black text-brand-greenLight tracking-widest text-xs">Verificando atendimento...</span>
+      </div>
+    </div>
+
+    <!-- SEÇÃO HERO PRINCIPAL -->
+    <section class="relative max-w-6xl mx-auto px-5 pt-8 pb-12">
+      <div class="w-full flex flex-col lg:grid lg:grid-cols-12 lg:gap-10 lg:items-center">
+        
+        <!-- Esquerda: Informações e Contatos -->
+        <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+          
+          <!-- Selo Superior -->
+          <div class="flex items-center gap-3 w-full justify-center lg:justify-start border-b border-slate-200 pb-4">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white p-2 shadow-xl border-2 border-brand-green shrink-0 flex items-center justify-center green-glow animate-float-slow">
+              <img src="pereira.webp" alt="Pereira Logo" class="w-full h-full object-contain">
+            </div>
+            <div class="text-left space-y-0.5">
+              <span class="block text-xl sm:text-2xl uppercase tracking-wider green-gradient-text font-black font-display leading-tight">PEREIRA TROCA DE ÓLEO</span>
+              <span class="block text-[10px] sm:text-[11px] text-slate-500 uppercase font-mono font-bold tracking-widest leading-none">Troca de Óleo e Filtros • Desde 12/2023</span>
+              <span class="block text-[11px] text-brand-green font-mono font-bold">📍 Palmeiras de Goiás - GO</span>
+            </div>
+          </div>
+
+          <!-- Título Principal -->
+          <div class="space-y-2 max-w-xl lg:max-w-none font-display">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight uppercase tracking-wider">
+              O CUIDADO QUE O SEU <br class="hidden lg:block">
+              <span class="green-gradient-text italic font-serif">MOTOR MERECE!</span>
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-600 font-semibold leading-relaxed max-w-lg font-sans">
+              Especialistas em troca de óleo e substituição de filtros para <strong class="text-slate-900">Carros, Camionetes e Motos</strong>. Trabalhamos exclusivamente com as melhores marcas do mercado nacional e internacional.
+            </p>
+          </div>
+
+          <!-- 1. CONTATO DIRETO WHATSAPP -->
+          <div class="w-full bg-white border border-slate-200 rounded-3xl p-5 shadow-xl space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+              <span class="text-[11px] uppercase tracking-widest font-bold font-badge text-brand-green flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-emerald-500 text-base animate-pulse"></i> Atendimento WhatsApp
+              </span>
+              <span class="text-[9px] font-bold bg-emerald-50 text-emerald-600 border border-emerald-200 px-2.5 py-0.5 rounded-full font-mono uppercase">Resposta Rápida</span>
+            </div>
+
+            <a href="https://api.whatsapp.com/send?phone=556292943399&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Pereira%20Troca%20de%20%C3%93leo%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 bg-slate-900 hover:bg-slate-800 text-white rounded-2xl transition-all hover:scale-[1.01] active:scale-95 shadow-md group">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-green text-white flex items-center justify-center font-bold text-lg shrink-0 shadow">
+                  <i class="fa-brands fa-whatsapp text-xl"></i>
+                </div>
+                <div class="text-left leading-tight">
+                  <span class="block text-xs font-black font-display uppercase tracking-wider text-white group-hover:text-brand-greenLight transition-colors">Atendimento Geral / Pereira</span>
+                  <span class="block text-[11px] text-slate-300 font-mono font-bold">(62) 99294-3399</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-white transition-colors mr-1"></i>
+            </a>
+          </div>
+
+          <!-- BOTÕES PRINCIPAIS DE NAVEGAÇÃO RÁPIDA -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-xl w-full">
+            <a href="https://www.instagram.com/pereiratrocadeoleopls?igsh=MTRjMTVjcDIzd2g4bA==" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl transition-all text-center shadow-sm hover:scale-105">
+              <i class="fa-brands fa-instagram text-pink-600 text-lg mb-1"></i>
+              <span class="text-[11px] font-black text-slate-800 uppercase font-display tracking-wider">Instagram</span>
+            </a>
+            <a href="https://maps.app.goo.gl/cde5euky6j9KSyxR9" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl transition-all text-center shadow-sm hover:scale-105">
+              <i class="fa-solid fa-location-dot text-emerald-600 text-lg mb-1"></i>
+              <span class="text-[11px] font-black text-slate-800 uppercase font-display tracking-wider">Como Chegar</span>
+            </a>
+            <a href="https://search.google.com/local/writereview?placeid=ChIJaQzUCUojXpMRTpj9jjplyGk" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl transition-all text-center shadow-sm hover:scale-105">
+              <i class="fa-solid fa-star text-amber-500 text-lg mb-1"></i>
+              <span class="text-[11px] font-black text-slate-800 uppercase font-display tracking-wider">Avaliar</span>
+            </a>
+            <a href="#pix" class="flex flex-col items-center justify-center p-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl transition-all text-center shadow-sm hover:scale-105">
+              <i class="fa-solid fa-pix text-teal-600 text-lg mb-1"></i>
+              <span class="text-[11px] font-black text-slate-800 uppercase font-display tracking-wider">Chave PIX</span>
+            </a>
+
+            <!-- Botão Avaliar no Google Destaque -->
+            <a href="https://search.google.com/local/writereview?placeid=ChIJaQzUCUojXpMRTpj9jjplyGk" target="_blank" rel="noopener noreferrer" class="col-span-2 sm:col-span-4 flex items-center justify-center gap-2 p-3.5 green-button-gradient text-white font-black rounded-2xl transition-all text-center shadow-md font-display uppercase tracking-widest text-xs hover:scale-[1.01] active:scale-95">
+              <i class="fa-solid fa-star text-amber-300 text-base"></i>
+              <span>Deixar Avaliação 5 Estrelas no Google</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Direita: Card com Logo Pereira & Destaques de Veículos -->
+        <div class="lg:col-span-5 mt-8 lg:mt-0 w-full flex flex-col items-center justify-center">
+          <div class="w-full max-w-md relative group">
+            <div class="absolute -inset-2 bg-gradient-to-r from-brand-green via-emerald-400 to-green-600 rounded-[28px] blur opacity-20 group-hover:opacity-35 transition duration-700"></div>
+            <div class="relative w-full rounded-2xl overflow-hidden border-2 border-brand-green shadow-2xl bg-white flex flex-col items-center justify-center p-6 text-center">
+              
+              <img src="pereira.webp" alt="Pereira Troca de Óleo Destaque" class="w-56 h-56 object-contain filter drop-shadow-[0_10px_20px_rgba(22,163,74,0.2)] transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://via.placeholder.com/300/ffffff/16a34a?text=PEREIRA'">
+              
+              <div class="w-full mt-4 pt-4 border-t border-slate-100 text-slate-700 font-display space-y-2">
+                <span class="inline-block bg-brand-green text-white text-[9px] font-badge uppercase tracking-widest font-bold px-3 py-1 rounded-full">
+                  Atendimento Especializado
+                </span>
+                
+                <div class="grid grid-cols-3 gap-2 text-center pt-2 font-mono">
+                  <div class="p-2 rounded-xl bg-slate-50 border border-slate-200">
+                    <i class="fa-solid fa-car text-brand-green text-base block mb-1"></i>
+                    <span class="text-[10px] font-bold block text-slate-800">CARROS</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-50 border border-slate-200">
+                    <i class="fa-solid fa-truck-pickup text-brand-green text-base block mb-1"></i>
+                    <span class="text-[10px] font-bold block text-slate-800">CAMIONETES</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-50 border border-slate-200">
+                    <i class="fa-solid fa-motorcycle text-brand-green text-base block mb-1"></i>
+                    <span class="text-[10px] font-bold block text-slate-800">MOTOS</span>
+                  </div>
+                </div>
+
+                <p class="text-[11px] text-slate-500 font-sans font-semibold pt-1">
+                  Av. Humberto Mendonça, Qd.21 Lt.04 - Palmeiras de Goiás
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CARROSSEL INFINITO DE MARCAS PARCEIRAS -->
+    <section id="marcas" class="w-full py-8 bg-white border-y border-slate-200 overflow-hidden shadow-inner">
+      <div class="max-w-6xl mx-auto px-5 mb-4 text-center">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-brand-green font-bold font-badge block">// PROCEDÊNCIA GARANTIDA</span>
+        <h2 class="text-xl sm:text-2xl font-display font-black text-slate-900 uppercase tracking-wider">Trabalhamos Com As Melhores Marcas</h2>
+      </div>
+
+      <div class="relative w-full overflow-hidden">
+        <div class="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+        
+        <div class="animate-marquee items-center gap-4 py-2">
+          <!-- Bloco de Marcas 1 -->
+          <div class="flex items-center gap-3 shrink-0">
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Shell</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Mobil</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Havoline (Texaco)</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Castrol</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Motorcraft</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Lubrax</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Tecfil</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Mann-Filter</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Wega</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-gears text-brand-green"></i> Wurth</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> GT-Oil</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Bosch</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Mahle</span>
+          </div>
+
+          <!-- Bloco de Marcas 2 (Duplicado para efeito contínuo) -->
+          <div class="flex items-center gap-3 shrink-0">
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Shell</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Mobil</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Havoline (Texaco)</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Castrol</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Motorcraft</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> Lubrax</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Tecfil</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Mann-Filter</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Wega</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-gears text-brand-green"></i> Wurth</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-oil-can text-brand-green"></i> GT-Oil</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Bosch</span>
+            <span class="px-4 py-2 rounded-xl bg-slate-100 border border-slate-200 text-xs font-black uppercase text-slate-800 shadow-sm flex items-center gap-2"><i class="fa-solid fa-filter text-brand-green"></i> Mahle</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO DETALHADO DE PRODUTOS -->
+    <section id="produtos" class="max-w-6xl mx-auto px-5 py-12 reveal">
+      <div class="text-center mb-8">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-brand-green font-bold font-badge block">// PRODUTOS DISPONÍVEIS</span>
+        <h2 class="text-2xl sm:text-3xl font-display font-black text-slate-900 uppercase tracking-wider">Linha Completa de Óleos e Filtros</h2>
+        <p class="text-xs text-slate-600 font-medium mt-1">Sintéticos, semissintéticos, minerais e filtros especificados para o seu veículo.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- CARD 1: ÓLEOS DE MOTOR -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-lg space-y-3 hover:border-brand-green transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green border border-emerald-200 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-bottle-droplet"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-black text-slate-900 uppercase text-sm tracking-wider">Óleos de Motor</h3>
+            <p class="text-[11px] text-slate-500 font-medium leading-relaxed mt-0.5">Sintético, Semissintético e Mineral.</p>
+          </div>
+          <ul class="text-[11px] text-slate-600 space-y-1.5 font-sans pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Shell:</strong> Helix Ultra, HX7 SP, HX3, Advance</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Mobil:</strong> Super 0W-20, 5W-30, 15W-40</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Havoline:</strong> ProDS 0W-20, 5W-30, 5W-40</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Castrol:</strong> Magnatec SUV/Flex 5W-20/30/40</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Motorcraft, Lubrax, Deiton, GT-Oil, Maxi Performance</strong></li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: TRANSMISSÃO E CÂMBIO -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-lg space-y-3 hover:border-brand-green transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green border border-emerald-200 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-black text-slate-900 uppercase text-sm tracking-wider">Transmissão & Direção</h3>
+            <p class="text-[11px] text-slate-500 font-medium leading-relaxed mt-0.5">Fluidos de Câmbio e Direção Hidráulica.</p>
+          </div>
+          <ul class="text-[11px] text-slate-600 space-y-1.5 font-sans pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Evora:</strong> Blend Gear 75W-90 GL-5</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Radnaq:</strong> Fluido Transmissão 80W-90 GL-5</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Motorfix:</strong> DH Tipo A (500ml e 1L)</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> Alta eficiência e proteção de engrenagens</li>
+          </ul>
+        </div>
+
+        <!-- CARD 3: FLUIDOS E ADITIVOS -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-lg space-y-3 hover:border-brand-green transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green border border-emerald-200 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-vial-circle-check"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-black text-slate-900 uppercase text-sm tracking-wider">Aditivos & Fluidos</h3>
+            <p class="text-[11px] text-slate-500 font-medium leading-relaxed mt-0.5">Radiador, Freio e Químicos.</p>
+          </div>
+          <ul class="text-[11px] text-slate-600 space-y-1.5 font-sans pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Motorfix:</strong> Fluido de Freio DOT3 / DOT4</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Motorfix:</strong> Água Desmineralizada 1L</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Black Brasil:</strong> Solução Híbrida 7-em-1</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Tirreno, Speed & Wurth:</strong> Aditivos e Descarbonizantes</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Tekbond / Wurth:</strong> Silicones Neutro e Alta Temp.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 4: FILTROS DIVERSOS -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-lg space-y-3 hover:border-brand-green transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green border border-emerald-200 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-filter"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-black text-slate-900 uppercase text-sm tracking-wider">Filtros Automotivos</h3>
+            <p class="text-[11px] text-slate-500 font-medium leading-relaxed mt-0.5">Óleo, Combustível, Ar e Cabine.</p>
+          </div>
+          <ul class="text-[11px] text-slate-600 space-y-1.5 font-sans pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Tecfil:</strong> Linha Completa PSL, PEL, GI, ARL</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Mann-Filter:</strong> Série W, WK e C</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Motorfix Pro Filter:</strong> Série ALM e LU</li>
+            <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-green text-[10px]"></i> <strong>Wega, Japanparts, Bosch & Mahle</strong></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERIA / FOTOS DA ESTRUTURA -->
+    <section id="servicos" class="w-full py-12 bg-white border-t border-b border-slate-200 reveal">
+      <div class="max-w-6xl mx-auto px-5 mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <span class="text-[10px] uppercase tracking-[0.25em] text-brand-green font-bold font-badge block">// ESTRUTURA & ATENDIMENTO</span>
+          <h2 class="text-2xl md:text-3xl font-display font-black text-slate-900 uppercase tracking-wider">Nosso Espaço</h2>
+          <p class="text-xs text-slate-600 font-medium mt-1">Conheça nossa estrutura em Palmeiras de Goiás preparada para te atender com agilidade.</p>
+        </div>
+        <a href="https://maps.app.goo.gl/cde5euky6j9KSyxR9" target="_blank" class="text-xs font-bold text-brand-green hover:underline flex items-center gap-1 font-display uppercase tracking-wider">
+          Ver no GPS <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+      </div>
+
+      <div class="relative w-full">
+        <div class="absolute left-0 top-0 bottom-0 w-8 md:w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-8 md:w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+        <div id="storeCarousel" class="flex gap-4 overflow-x-auto scrollbar-hide py-3 px-5 select-none cursor-grab active:cursor-grabbing">
+          <!-- Gerado dinamicamente via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD DO PIX (DADOS BANCÁRIOS COM BOTÃO DE CÓPIA) -->
+    <section id="pix" class="max-w-6xl mx-auto px-5 py-10 reveal">
+      <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-2xl border border-slate-700 relative overflow-hidden">
+        
+        <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-green/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
+          
+          <div class="space-y-3 max-w-xl">
+            <span class="text-[10px] uppercase tracking-[0.25em] text-brand-greenLight font-bold font-badge block flex items-center gap-1.5">
+              <i class="fa-solid fa-pix text-teal-400 text-sm"></i> PAGAMENTO FACILITADO VIA PIX
+            </span>
+            <h3 class="text-2xl font-display font-black text-white uppercase tracking-wider">Dados da Chave PIX</h3>
+            
+            <div class="bg-black/40 border border-slate-700 rounded-2xl p-4 space-y-2 text-xs font-mono">
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-700/60 pb-2">
+                <span class="text-slate-400">Chave PIX (CNPJ):</span>
+                <span class="font-bold text-brand-greenLight">36.178.999/0001-00</span>
+              </div>
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-700/60 pb-2">
+                <span class="text-slate-400">Favorecido:</span>
+                <span class="font-bold text-white">36.178.999 IARA FERREIRA FRANCO PEREIRA</span>
+              </div>
+              <div class="flex flex-col sm:flex-row sm:justify-between">
+                <span class="text-slate-400">Instituição:</span>
+                <span class="font-bold text-slate-200">SICREDI CERRADO GO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center justify-center shrink-0 w-full md:w-auto">
+            <button onclick="copyPixKey()" id="btnCopyPix" class="w-full md:w-auto px-6 py-4 green-button-gradient text-white font-black text-xs uppercase tracking-wider rounded-2xl shadow-xl transition-all flex items-center justify-center gap-2 font-display hover:scale-105 active:scale-95">
+              <i class="fa-solid fa-copy text-base"></i>
+              <span id="txtCopyPix">Copiar Chave PIX (CNPJ)</span>
+            </button>
+            <span class="text-[10px] text-slate-400 font-mono mt-2 text-center">Clique para copiar o CNPJ sem formatação</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS DA PEREIRA TROCA DE ÓLEO -->
+    <section class="max-w-6xl mx-auto px-5 py-8 reveal">
+      <div class="text-center mb-8">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-brand-green font-bold font-badge block">// POR QUE ESCOLHER A PEREIRA?</span>
+        <h2 class="text-2xl sm:text-3xl font-display font-black text-slate-900 uppercase tracking-wider">Compromisso & Agilidade</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 text-center space-y-2 hover:border-brand-green transition-all hover:-translate-y-1 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green border border-emerald-200 flex items-center justify-center text-xl mx-auto">
+            <i class="fa-solid fa-stopwatch"></i>
+          </div>
+          <h3 class="font-display font-black text-slate-900 uppercase text-sm tracking-wider">Atendimento Rápido</h3>
+          <p class="text-[11px] text-slate-600 font-medium leading-relaxed">Troca de óleo rápida para você não perder tempo na sua rotina.</p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 text-center space-y-2 hover:border-brand-green transition-all hover:-translate-y-1 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green border border-emerald-200 flex items-center justify-center text-xl mx-auto">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="font-display font-black text-slate-900 uppercase text-sm tracking-wider">Produtos Originais</h3>
+          <p class="text-[11px] text-slate-600 font-medium leading-relaxed">Óleos e filtros das marcas mais renomadas e homologadas pelas montadoras.</p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 text-center space-y-2 hover:border-brand-green transition-all hover:-translate-y-1 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green border border-emerald-200 flex items-center justify-center text-xl mx-auto">
+            <i class="fa-solid fa-motorcycle"></i>
+          </div>
+          <h3 class="font-display font-black text-slate-900 uppercase text-sm tracking-wider">Multi-Veículos</h3>
+          <p class="text-[11px] text-slate-600 font-medium leading-relaxed">Atendimento especializado para Carros de Passeio, Camionetes e Motocicletas.</p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 text-center space-y-2 hover:border-brand-green transition-all hover:-translate-y-1 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-green border border-emerald-200 flex items-center justify-center text-xl mx-auto">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="font-display font-black text-slate-900 uppercase text-sm tracking-wider">Transparência Total</h3>
+          <p class="text-[11px] text-slate-600 font-medium leading-relaxed">Mostramos a especificação exata do produto recomendado para seu veículo.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO E CONTATO COM MAPA EMBUTIDO -->
+    <section id="localizacao" class="max-w-6xl mx-auto px-5 py-8 reveal">
+      <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-xl flex flex-col lg:flex-row">
+        
+        <!-- Informações e Botão de GPS -->
+        <div class="p-6 md:p-8 lg:w-1/2 flex flex-col justify-between space-y-6">
+          <div class="space-y-3">
+            <span class="text-[10px] uppercase tracking-[0.25em] text-brand-green font-bold font-badge block">// ONDE ESTAMOS</span>
+            <h3 class="text-2xl font-display font-black text-slate-900 uppercase tracking-wider">Venha Nos Visitar</h3>
+            <p class="text-xs text-slate-600 font-medium leading-relaxed font-sans">
+              Estamos localizados em ponto estratégico em Palmeiras de Goiás - GO. Traga seu veículo para a revisão preventiva de óleo e filtros!
+            </p>
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2 text-xs text-slate-800 font-mono">
+              <p class="font-black text-brand-green"><i class="fa-solid fa-oil-can mr-1.5"></i> Pereira Troca de Óleo</p>
+              <p><i class="fa-solid fa-location-dot mr-1.5 text-slate-400"></i> Av. Humberto Mendonça, s/n - Qd.21 Lt.04</p>
+              <p>Palmeiras de Goiás - GO, CEP: 76190-000</p>
+              <div class="pt-2 border-t border-slate-200 text-[11px] space-y-1">
+                <p class="text-slate-700"><i class="fa-regular fa-clock mr-1 text-brand-green"></i> <strong>Segunda a Sexta:</strong> 08:00 às 18:00</p>
+                <p class="text-slate-700"><i class="fa-regular fa-clock mr-1 text-brand-green"></i> <strong>Sábado:</strong> 08:00 às 14:00</p>
+                <p class="text-slate-500"><i class="fa-regular fa-circle-xmark mr-1 text-rose-500"></i> <strong>Domingo:</strong> Fechado</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="https://maps.app.goo.gl/cde5euky6j9KSyxR9" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 green-button-gradient text-white font-black text-xs uppercase tracking-wider rounded-xl transition-all shadow-md text-center font-display flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-95">
+              <i class="fa-solid fa-route text-base"></i> Abrir Rota no GPS (Google Maps)
+            </a>
+          </div>
+        </div>
+
+        <!-- Mapa do Google Embutido -->
+        <div class="lg:w-1/2 h-64 lg:h-auto min-h-[280px] bg-slate-100 relative border-t lg:border-t-0 lg:border-l border-slate-200">
+          <iframe 
+            title="Mapa da Pereira Troca de Óleo"
+            src="https://maps.google.com/maps?q=Av.+Humberto+Mendon%C3%A7a,+Palmeiras+de+Goi%C3%A1s+-+GO&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            class="w-full h-full border-0 filter contrast-105 opacity-90" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPÉ COM CRÉDITOS -->
+    <footer class="bg-slate-900 text-white py-12 px-5 text-center border-t border-slate-800 relative z-10">
+      <div class="max-w-6xl mx-auto flex flex-col items-center gap-5">
+        <div class="h-14">
+          <img src="pereira.webp" alt="Pereira Troca de Óleo" class="h-full w-auto object-contain filter drop-shadow">
+        </div>
+        <p class="text-[11px] text-brand-greenLight uppercase tracking-[0.25em] font-badge font-bold">
+          [ CARROS • CAMIONETES • MOTOS ]
+        </p>
+        
+        <div class="text-[11px] text-slate-400 space-y-1 font-mono">
+          <p>Av. Humberto Mendonça, s/n - Qd.21 Lt.04 - Palmeiras de Goiás - GO</p>
+          <p>&copy; <span id="currentYear"></span> Pereira Troca de Óleo. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800 text-[11px] text-slate-400 font-sans leading-relaxed">
+          <p>
+            Desenvolvido por <span class="text-slate-200 font-semibold">João Vitor S N</span> • 
+            <a href="https://jovidigital.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-brand-greenLight hover:text-white font-bold underline transition-colors inline-flex items-center gap-1">
+              Crie seu site aqui <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- INDICADOR FLUTUANTE DISCRETO PARA ROLAR PARA BAIXO -->
+    <div id="scrollDownIndicator" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-30 transition-all duration-500 opacity-100 pointer-events-auto">
+      <a href="#servicos" class="flex items-center gap-2 px-3.5 py-1.5 bg-slate-900/90 hover:bg-slate-900 border border-brand-green text-brand-greenLight rounded-full shadow-2xl backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider transition-all hover:scale-105 active:scale-95 group">
+        <span class="text-slate-200 group-hover:text-brand-greenLight transition-colors">Ver Mais</span>
+        <i class="fa-solid fa-chevron-down text-brand-greenLight animate-bounce text-[10px]"></i>
+      </a>
+    </div>
+
+    <!-- BOTÃO FLUTUANTE MULTI-CONTATO WHATSAPP (SISTEMA DE EVITAÇÃO DO RODAPÉ) -->
+    <div id="floatingWaContainer" class="fixed bottom-6 right-6 z-40 flex flex-col items-end transition-all duration-300">
+      
+      <!-- MENU EXPANSÍVEL -->
+      <div id="waSpeedDialMenu" class="flex flex-col items-end space-y-2 mb-3 opacity-0 pointer-events-none scale-90 origin-bottom-right transition-all duration-300 ease-out">
+        
+        <a href="https://api.whatsapp.com/send?phone=556292943399&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Pereira%20Troca%20de%20%C3%93leo%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-3.5 py-2 bg-slate-900/95 border border-emerald-500/50 text-white rounded-2xl shadow-2xl hover:bg-emerald-600 transition-all text-xs font-display font-bold uppercase tracking-wider backdrop-blur-md group hover:scale-105">
+          <span class="text-[10px] text-slate-300 group-hover:text-white font-mono font-bold">Atendimento Pereira</span>
+          <div class="w-7 h-7 rounded-full bg-[#25D366] text-white flex items-center justify-center text-sm shadow">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- BOTÃO PRINCIPAL FLUTUANTE -->
+      <button onclick="toggleWaSpeedDial()" class="w-14 h-14 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 relative group border border-emerald-400/40" aria-label="Atendimento WhatsApp">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-20 animate-ping"></span>
+        <i id="waMainIcon" class="fa-brands fa-whatsapp text-2xl relative z-10 transition-transform duration-300"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- MODAL COMPARTILHAR E INSTALAR APP -->
+  <div id="shareModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-slate-200 transform scale-95 transition-transform duration-300 font-sans max-h-[90vh] flex flex-col text-slate-800">
+      
+      <!-- Cabeçalho do Modal -->
+      <div class="p-4 flex items-center justify-between border-b border-slate-100 bg-slate-50">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-share-nodes text-brand-green text-base"></i>
+          <h4 class="font-display text-sm text-slate-900 font-black uppercase tracking-wider">Compartilhar & Baixar App</h4>
+        </div>
+        <button onclick="closeShareModal()" class="w-8 h-8 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-600 flex items-center justify-center transition-colors"><i class="fa-solid fa-xmark text-sm"></i></button>
+      </div>
+
+      <!-- Conteúdo do Modal -->
+      <div class="p-5 overflow-y-auto space-y-4 text-xs font-sans">
+        
+        <!-- CARD INSTALAR APP PWA NATIVO -->
+        <div class="bg-slate-900 text-white p-4 rounded-2xl shadow-xl border border-brand-green space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="pereira.webp" alt="Pereira Ícone" class="w-12 h-12 rounded-xl object-contain bg-white p-1 shadow shrink-0">
+            <div>
+              <h5 class="font-black font-display uppercase tracking-wider text-brand-greenLight text-xs">Pereira no Celular</h5>
+              <p class="text-[10px] text-slate-300 font-medium leading-tight mt-0.5">Instale nosso aplicativo oficial diretamente na sua tela inicial!</p>
+            </div>
+          </div>
+
+          <button onclick="triggerPwaInstall()" id="btnInstallPwa" class="w-full py-3.5 green-button-gradient text-white font-black text-xs uppercase tracking-wider rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 font-display hover:scale-[1.01] active:scale-95">
+            <i class="fa-brands fa-android text-base shrink-0"></i> 
+            <span id="btnInstallText" class="text-center">Instalar App no Celular (Android)</span>
+          </button>
+
+          <div class="text-center pt-1">
+            <button onclick="toggleIphoneGuide()" class="text-[10px] text-slate-300 hover:text-brand-greenLight font-bold uppercase tracking-wider underline transition-colors inline-flex items-center gap-1 font-sans">
+              <i class="fa-brands fa-apple text-xs"></i> Possui iPhone (iOS)? Clique para instrução
+            </button>
+          </div>
+
+          <!-- Guia do iPhone -->
+          <div id="iphoneGuideBox" class="hidden pt-3 border-t border-slate-800 text-[10px] space-y-2 text-slate-300">
+            <div class="p-3 bg-black/60 rounded-xl space-y-2 border border-brand-green/30">
+              <div class="flex items-center gap-2 text-brand-greenLight font-bold font-display uppercase text-[11px]">
+                <i class="fa-brands fa-apple text-sm"></i> Passo a passo para iPhone:
+              </div>
+              <ol class="space-y-1.5 font-sans leading-relaxed text-[10px]">
+                <li class="flex items-start gap-1.5">
+                  <span class="font-bold text-brand-greenLight">1.</span>
+                  <span>No Safari do seu iPhone, toque no botão de <strong>Compartilhar (⎋)</strong>.</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="font-bold text-brand-greenLight">2.</span>
+                  <span>Role a lista para baixo e selecione <strong>"Adicionar à Tela de Início"</strong>.</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="font-bold text-brand-greenLight">3.</span>
+                  <span>Toque em <strong>"Adicionar"</strong> no canto superior direito.</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Instruções de Fallback do Android -->
+          <div id="pwaInstructions" class="hidden pt-2 border-t border-slate-800 text-[10px] space-y-2 text-slate-300">
+            <div class="p-2.5 bg-black/60 rounded-xl space-y-1 border border-brand-green/30 font-sans">
+              <p class="font-bold text-brand-greenLight"><i class="fa-brands fa-android mr-1"></i> Se a janela automática não abrir:</p>
+              <p>1. Toque nos <strong>3 pontinhos (⋮)</strong> no canto superior do seu Chrome.<br>2. Selecione <strong>"Instalar aplicativo"</strong> ou <strong>"Adicionar à tela inicial"</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPARTILHAR NO WHATSAPP -->
+        <div class="bg-emerald-50 border border-emerald-200 p-3.5 rounded-2xl space-y-2 text-center">
+          <label class="block text-[11px] font-black font-display text-emerald-700 uppercase tracking-wider text-center">
+            <i class="fa-brands fa-whatsapp text-emerald-600 mr-1 text-sm"></i> Compartilhar no WhatsApp
+          </label>
+          <p class="text-[10px] text-slate-600 font-medium text-center">Escolha um contato ou grupo para enviar o link oficial da Pereira Troca de Óleo:</p>
+          <a id="shareWaLinkChoice" href="#" target="_blank" class="w-full py-3 px-4 bg-[#25D366] hover:bg-[#20ba5a] text-white font-black text-xs rounded-xl font-display uppercase tracking-wider transition-all shadow flex items-center justify-center text-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg shrink-0"></i>
+            <span class="text-center leading-normal">Enviar para Contato ou Grupo</span>
+          </a>
+        </div>
+
+        <!-- WHATS DIRECT -->
+        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-2xl space-y-2">
+          <label class="block text-[11px] font-black font-display text-slate-800 uppercase tracking-wider">
+            <i class="fa-solid fa-paper-plane text-brand-green mr-1"></i> Whats Direct (Enviar para Número)
+          </label>
+          <div class="flex gap-2">
+            <input type="tel" id="whatsDirectNum" placeholder="DDD + Número (ex: 62992...)" class="flex-1 px-3 py-2 text-xs bg-white border border-slate-300 rounded-xl font-mono text-slate-800 focus:outline-none focus:border-brand-green">
+            <button onclick="sendWhatsDirect()" class="px-3.5 py-2 green-button-gradient text-white font-black text-xs rounded-xl font-display uppercase tracking-wider shadow shrink-0">
+              Enviar
+            </button>
+          </div>
+        </div>
+
+        <!-- QR CODE DO SITE -->
+        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-2xl space-y-3 text-center">
+          <button onclick="toggleQrCode()" class="w-full flex items-center justify-between text-xs font-bold font-display text-slate-800 uppercase tracking-wider">
+            <span class="flex items-center gap-2"><i class="fa-solid fa-qrcode text-brand-green"></i> Exibir QR Code do Site</span>
+            <i id="qrArrow" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+          </button>
+          
+          <div id="qrCodeContainer" class="hidden pt-2 flex flex-col items-center justify-center space-y-2">
+            <img id="shareQrImg" src="" alt="QR Code Pereira" class="w-36 h-36 border-2 border-brand-green p-2 bg-white rounded-xl shadow">
+            <span class="text-[9px] text-slate-500 font-mono">Aproxime a câmera do celular para abrir o site</span>
+          </div>
+        </div>
+
+        <!-- COPIAR LINK DO SITE -->
+        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-between">
+          <span id="shareUrlText" class="text-[10px] font-mono text-slate-600 truncate mr-2"></span>
+          <button onclick="copySiteUrl()" id="copyUrlBtn" class="text-xs font-bold text-brand-green font-mono uppercase shrink-0 hover:underline">COPIAR</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL LIGHTBOX / AMPLIAÇÃO DE FOTOS -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-slate-900/90 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="lightboxContent" class="bg-white border border-slate-200 w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 flex flex-col relative max-h-[90vh]">
+      <button onclick="closeLightbox()" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white flex items-center justify-center transition-all shadow-lg" title="Fechar">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <div class="w-full h-full max-h-[85vh] bg-slate-900 flex items-center justify-center overflow-hidden p-2">
+        <img id="lightboxImage" src="" alt="Ampliação" class="max-w-full max-h-[80vh] object-contain rounded-2xl">
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT OTIMIZADO -->
+  <script>
+    const siteUrl = window.location.href;
+    let deferredPrompt = null;
+
+    // FOTOS DA ESTRUTURA E SERVIÇOS
+    const storePhotos = [
+      { id: 1, img: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80", title: "Atendimento e Troca de Óleo" },
+      { id: 2, img: "https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?auto=format&fit=crop&w=800&q=80", title: "Produtos de Alta Qualidade" },
+      { id: 3, img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80", title: "Revisão de Filtros" },
+      { id: 4, img: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80", title: "Estrutura para Carros e Camionetes" },
+      { id: 5, img: "https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=800&q=80", title: "Especialista para Motocicletas" }
+    ];
+
+    // SERVICE WORKER PWA
+    function registerPwaServiceWorker() {
+      if ('serviceWorker' in navigator) {
+        const swContent = 'data:text/javascript;base64,c2VsZi5hZGRFdmVudExpc3RlbmVyKCdpbnN0YWxsJywgZSA9PiBzZWxmLnNraXBXYWl0aW5nKCkpOyBzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2FjdGl2YXRlJywgZSA9PiBlLndhaXRVbnRpbChzZWxmLmNsaWVudHMuY2xhaW0oKSkpOyBzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2ZldGNoJywgZSA9PiBlLnJlc3BvbmRXaXRoKGZldGNoKGUucmVxdWVzdCkpKTs=';
+        navigator.serviceWorker.register(swContent)
+          .then(() => console.log("PWA SW Registrado com Sucesso"))
+          .catch(err => {
+            try {
+              const blob = new Blob(["self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>e.respondWith(fetch(e.request).catch(()=>new Response('Offline'))));"], {type:'text/javascript'});
+              navigator.serviceWorker.register(URL.createObjectURL(blob));
+            } catch(e){}
+          });
+      }
+    }
+
+    // UPDATE OPEN GRAPH URLs
+    function updateOpenGraphUrls() {
+      const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/');
+      const absoluteLogoUrl = baseUrl + "pereira.webp";
+      
+      const ogImg = document.getElementById('ogImageTag');
+      const ogSecureImg = document.getElementById('ogImageSecureTag');
+      const itempropImg = document.getElementById('itempropImageTag');
+      const twitterImg = document.getElementById('twitterImageTag');
+
+      if (ogImg) ogImg.setAttribute('content', absoluteLogoUrl);
+      if (ogSecureImg) ogSecureImg.setAttribute('content', absoluteLogoUrl);
+      if (itempropImg) itempropImg.setAttribute('content', absoluteLogoUrl);
+      if (twitterImg) twitterImg.setAttribute('content', absoluteLogoUrl);
+    }
+
+    // CAPTURA DO PROMPT PWA
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const btnText = document.getElementById('btnInstallText');
+      if (btnText) btnText.textContent = "Instalar App no Celular (Android)";
+    });
+
+    function startInitialization() {
+      registerPwaServiceWorker();
+      updateOpenGraphUrls();
+
+      const counter = document.getElementById('splashCounter');
+      const progressBar = document.getElementById('splashProgressBar');
+      const splashText = document.getElementById('splashText');
+      let count = 0;
+      
+      const interval = setInterval(() => {
+        count += 2;
+        if (counter) counter.textContent = count + '%';
+        if (progressBar) progressBar.style.width = count + '%';
+        if (count >= 100) {
+          clearInterval(interval);
+          finishSplash();
+        }
+      }, 15);
+
+      setTimeout(() => { if (splashText) splashText.classList.remove('opacity-0', 'translate-y-3'); }, 200);
+    }
+
+    function finishSplash() {
+      const splashScreen = document.getElementById('splashScreen');
+      const mainContent = document.getElementById('mainContent');
+      
+      if (splashScreen) {
+        splashScreen.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => splashScreen.style.display = 'none', 700);
+      }
+      document.body.classList.remove('overflow-hidden');
+      if (mainContent) mainContent.classList.remove('opacity-0');
+
+      initScrollReveal();
+      generateStoreCarousel();
+      updateStatus();
+      initScrollIndicatorListener();
+      initFooterAvoidanceObserver();
+      
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      document.getElementById('shareUrlText').textContent = siteUrl;
+      
+      const shareMsg = "Confira o site oficial da Pereira Troca de Óleo em Palmeiras de Goiás - GO!\n" + siteUrl;
+      document.getElementById('shareWaLinkChoice').href = "https://api.whatsapp.com/send?text=" + encodeURIComponent(shareMsg);
+    }
+
+    function triggerPwaInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('App instalado!');
+          }
+          deferredPrompt = null;
+        });
+      } else {
+        const androidBox = document.getElementById('pwaInstructions');
+        if (androidBox) {
+          androidBox.classList.remove('hidden');
+          androidBox.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+
+    // EVITAÇÃO DO RODAPÉ
+    function initFooterAvoidanceObserver() {
+      const footer = document.querySelector('footer');
+      const floatingWa = document.getElementById('floatingWaContainer');
+      const scrollIndicator = document.getElementById('scrollDownIndicator');
+
+      if (!footer || !floatingWa) return;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            floatingWa.style.transform = 'translateY(-75px)';
+            if (scrollIndicator) scrollIndicator.style.transform = 'translate(-50%, -75px)';
+          } else {
+            floatingWa.style.transform = 'translateY(0px)';
+            if (scrollIndicator) scrollIndicator.style.transform = 'translate(-50%, 0px)';
+          }
+        });
+      }, { threshold: 0.05 });
+
+      observer.observe(footer);
+    }
+
+    function toggleWaSpeedDial() {
+      const menu = document.getElementById('waSpeedDialMenu');
+      const icon = document.getElementById('waMainIcon');
+      if (!menu || !icon) return;
+
+      if (menu.classList.contains('opacity-0')) {
+        menu.classList.remove('opacity-0', 'pointer-events-none', 'scale-90');
+        menu.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
+        icon.className = 'fa-solid fa-xmark text-2xl relative z-10 transition-transform duration-300 rotate-90';
+      } else {
+        menu.classList.add('opacity-0', 'pointer-events-none', 'scale-90');
+        menu.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
+        icon.className = 'fa-brands fa-whatsapp text-2xl relative z-10 transition-transform duration-300';
+      }
+    }
+
+    function initScrollIndicatorListener() {
+      window.addEventListener('scroll', () => {
+        const indicator = document.getElementById('scrollDownIndicator');
+        if (!indicator) return;
+        if (window.scrollY > 220) {
+          indicator.classList.add('opacity-0', 'pointer-events-none');
+          indicator.classList.remove('opacity-100', 'pointer-events-auto');
+        } else {
+          indicator.classList.remove('opacity-0', 'pointer-events-none');
+          indicator.classList.add('opacity-100', 'pointer-events-auto');
+        }
+      }, { passive: true });
+    }
+
+    function generateStoreCarousel() {
+      const container = document.getElementById('storeCarousel');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const fragment = document.createDocumentFragment();
+
+      storePhotos.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'w-72 sm:w-80 h-52 sm:h-60 bg-slate-100 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer shadow-md border border-slate-200 hover:border-brand-green relative group card-photo';
+        
+        card.innerHTML = `
+          <img src="${item.img}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-90"></div>
+          <div class="absolute bottom-3 left-3 right-3 text-white font-display">
+            <span class="text-[11px] uppercase font-mono font-bold text-brand-greenLight">${item.title}</span>
+          </div>
+        `;
+        
+        card.onclick = () => openLightbox(item.img);
+        fragment.appendChild(card);
+      });
+
+      container.appendChild(fragment);
+      initAutoInertiaScroll('storeCarousel', 0.6);
+    }
+
+    function initAutoInertiaScroll(id, speed = 0.6) {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      let isDown = false;
+      let startX = 0;
+      let scrollLeft = 0;
+      let isHoveredOrTouched = false;
+      let isDragging = false;
+      let resumeTimeout = null;
+
+      let maxScroll = el.scrollWidth - el.clientWidth;
+      let currentScroll = el.scrollLeft;
+
+      const updateDimensions = () => {
+        maxScroll = el.scrollWidth - el.clientWidth;
+      };
+
+      window.addEventListener('resize', updateDimensions, { passive: true });
+
+      function autoScroll() {
+        if (!isHoveredOrTouched && !isDown && maxScroll > 0) {
+          currentScroll += speed;
+          if (currentScroll >= maxScroll - 2) {
+            currentScroll = 0;
+          }
+          el.scrollLeft = currentScroll;
+        } else {
+          currentScroll = el.scrollLeft;
+        }
+        requestAnimationFrame(autoScroll);
+      }
+
+      const stopAuto = () => {
+        isHoveredOrTouched = true;
+        if (resumeTimeout) clearTimeout(resumeTimeout);
+      };
+
+      const startAuto = () => {
+        if (resumeTimeout) clearTimeout(resumeTimeout);
+        resumeTimeout = setTimeout(() => {
+          isHoveredOrTouched = false;
+          isDown = false;
+          currentScroll = el.scrollLeft;
+        }, 1200);
+      };
+
+      el.addEventListener('mouseenter', stopAuto, { passive: true });
+      el.addEventListener('mouseleave', startAuto, { passive: true });
+
+      el.addEventListener('mousedown', (e) => {
+        isDown = true;
+        isDragging = false;
+        stopAuto();
+        startX = e.pageX - el.offsetLeft;
+        scrollLeft = el.scrollLeft;
+      });
+
+      el.addEventListener('mouseup', () => {
+        isDown = false;
+        startAuto();
+      });
+
+      el.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        const x = e.pageX - el.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        if (Math.abs(walk) > 5) isDragging = true;
+        el.scrollLeft = scrollLeft - walk;
+        currentScroll = el.scrollLeft;
+      });
+
+      el.addEventListener('touchstart', (e) => {
+        isDown = true;
+        isDragging = false;
+        stopAuto();
+        startX = e.touches[0].pageX - el.offsetLeft;
+        scrollLeft = el.scrollLeft;
+      }, { passive: true });
+
+      el.addEventListener('touchend', () => {
+        isDown = false;
+        startAuto();
+      });
+
+      el.addEventListener('touchmove', (e) => {
+        if (!isDown) return;
+        const x = e.touches[0].pageX - el.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        if (Math.abs(walk) > 5) isDragging = true;
+        el.scrollLeft = scrollLeft - walk;
+        currentScroll = el.scrollLeft;
+      }, { passive: true });
+
+      el.addEventListener('click', (e) => {
+        if (isDragging) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+          isDragging = false;
+        }
+      }, true);
+
+      setTimeout(updateDimensions, 400);
+      requestAnimationFrame(autoScroll);
+    }
+
+    // VERIFICAÇÃO DE HORÁRIO DE ATENDIMENTO (GOIÁS GMT-3)
+    function updateStatus() {
+      const indicator = document.getElementById('statusIndicator');
+      const text = document.getElementById('statusText');
+      if (!indicator || !text) return;
+
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const goiasTime = new Date(utc + (3600000 * -3));
+
+      const day = goiasTime.getDay(); // 0 = Dom, 1 = Seg... 6 = Sáb
+      const hour = goiasTime.getHours();
+      const min = goiasTime.getMinutes();
+      const timeInMin = (hour * 60) + min;
+
+      // Seg a Sex: 08:00 (480 min) às 18:00 (1080 min)
+      let isOpenWeek = (day >= 1 && day <= 5) && (timeInMin >= 480 && timeInMin < 1080);
+      
+      // Sábado: 08:00 (480 min) às 14:00 (840 min)
+      let isOpenSat = (day === 6) && (timeInMin >= 480 && timeInMin < 840);
+
+      if (isOpenWeek || isOpenSat) {
+        indicator.className = "inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-[0_0_8px_#22c55e]";
+        text.innerHTML = "ABERTO AGORA — Traga seu veículo para a troca de óleo!";
+      } else {
+        indicator.className = "inline-block w-2.5 h-2.5 rounded-full bg-amber-500 shadow-[0_0_8px_#f59e0b]";
+        text.innerHTML = "LOJA FECHADA NO MOMENTO — Horário: Seg a Sex (08h-18h) | Sáb (08h-14h)";
+      }
+    }
+
+    function initScrollReveal() {
+      const elements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      elements.forEach(el => observer.observe(el));
+    }
+
+    function openShareModal() {
+      const modal = document.getElementById('shareModal');
+      modal.classList.remove('pointer-events-none', 'opacity-0');
+      modal.firstElementChild.classList.remove('scale-95');
+    }
+    function closeShareModal() {
+      const modal = document.getElementById('shareModal');
+      modal.classList.add('pointer-events-none', 'opacity-0');
+      modal.firstElementChild.classList.add('scale-95');
+    }
+
+    function toggleIphoneGuide() {
+      const guide = document.getElementById('iphoneGuideBox');
+      if (guide) guide.classList.toggle('hidden');
+    }
+
+    function toggleQrCode() {
+      const container = document.getElementById('qrCodeContainer');
+      const qrImg = document.getElementById('shareQrImg');
+      const arrow = document.getElementById('qrArrow');
+
+      if (container && container.classList.contains('hidden')) {
+        qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=' + encodeURIComponent(siteUrl);
+        container.classList.remove('hidden');
+        if (arrow) arrow.classList.add('rotate-180');
+      } else if (container) {
+        container.classList.add('hidden');
+        if (arrow) arrow.classList.remove('rotate-180');
+      }
+    }
+
+    function sendWhatsDirect() {
+      const input = document.getElementById('whatsDirectNum');
+      if (!input) return;
+      let num = input.value.replace(/\D/g, '');
+      if (!num) {
+        alert("Por favor, digite o número do celular com o DDD!");
+        return;
+      }
+      if (num.length === 10 || num.length === 11) {
+        num = '55' + num;
+      }
+      const text = encodeURIComponent("Olá! Confira o site oficial da Pereira Troca de Óleo em Palmeiras de Goiás - GO:\n" + siteUrl);
+      window.open(`https://api.whatsapp.com/send?phone=${num}&text=${text}`, '_blank');
+    }
+
+    function copySiteUrl() {
+      navigator.clipboard.writeText(siteUrl).then(() => {
+        const btn = document.getElementById('copyUrlBtn');
+        if (btn) {
+          btn.textContent = "COPIADO!";
+          setTimeout(() => btn.textContent = "COPIAR", 2000);
+        }
+      });
+    }
+
+    // CÓPIA DA CHAVE PIX (CNPJ)
+    function copyPixKey() {
+      const pixKey = "36178999000100";
+      navigator.clipboard.writeText(pixKey).then(() => {
+        const txt = document.getElementById('txtCopyPix');
+        if (txt) {
+          txt.textContent = "CHAVE PIX COPIADA!";
+          setTimeout(() => txt.textContent = "Copiar Chave PIX (CNPJ)", 2500);
+        }
+      });
+    }
+
+    // LIGHTBOX
+    function openLightbox(src) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImage');
+
+      if (!modal || !img) return;
+
+      img.src = src;
+      modal.classList.remove('pointer-events-none', 'opacity-0');
+      document.getElementById('lightboxContent').classList.remove('scale-95');
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightboxModal');
+      if (modal) {
+        modal.classList.add('pointer-events-none', 'opacity-0');
+        document.getElementById('lightboxContent').classList.add('scale-95');
+      }
+    }
+
+    // DOWNLOAD VCARD
+    function downloadVCard() {
+      const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Pereira Troca de Óleo
+ORG:Pereira Troca de Óleo e Filtros
+TEL;TYPE=WORK,VOICE,CELL:+556292943399
+ADR;TYPE=WORK:;;Av. Humberto Mendonça, s/n - Qd.21 Lt.04;Palmeiras de Goiás;GO;76190-000;Brazil
+URL:${siteUrl}
+NOTE:Especialista em Troca de Óleo e Filtros para Carros, Camionetes e Motos
+END:VCARD`;
+
+      const blob = new Blob([vcard], { type: 'text/vcard' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.download = 'Pereira_Troca_de_Oleo.vcf';
+      a.href = url;
+      a.click();
+    }
+
+    document.addEventListener('DOMContentLoaded', startInitialization);
+  </script>
+</body>
+</html>
