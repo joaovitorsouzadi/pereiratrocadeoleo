@@ -152,20 +152,6 @@
       animation: floatSlow 4s ease-in-out infinite;
     }
 
-    /* CARROSSEL DE MARCAS CONTÍNUO */
-    @keyframes marquee {
-      0% { transform: translateX(0%); }
-      100% { transform: translateX(-50%); }
-    }
-    .animate-marquee {
-      display: flex;
-      width: 200%;
-      animation: marquee 32s linear infinite;
-    }
-    .animate-marquee:hover {
-      animation-play-state: paused;
-    }
-
     ::-webkit-scrollbar {
       width: 6px;
       height: 6px;
@@ -239,8 +225,13 @@
           <a href="#marcas" class="hover:text-brand-green transition-colors">Marcas</a>
           <a href="#produtos" class="hover:text-brand-green transition-colors">Catálogo</a>
           <a href="#sobre" class="hover:text-brand-green transition-colors">Sobre Nós</a>
-          <button onclick="openPixModal()" class="hover:text-brand-green transition-colors flex items-center gap-1">
-            <svg class="w-3.5 h-3.5 fill-current text-teal-600" viewBox="0 0 512 512"><path d="M112.5 108.9c22.8 0 44.2 8.9 60.3 25l51.8 51.8 51.8-51.8c16.1-16.1 37.5-25 60.3-25 47 0 85.3 38.2 85.3 85.3 0 22.8-8.9 44.2-25 60.3l-51.8 51.8 51.8 51.8c16.1 16.1 25 37.5 25 60.3 0 47-38.2 85.3-85.3 85.3-22.8 0-44.2-8.9-60.3-25L224 326.6l-51.8 51.8c-16.1 16.1-37.5 25-60.3 25-47 0-85.3-38.2-85.3-85.3 0-22.8 8.9-44.2 25-60.3l51.8-51.8-51.8-51.8c-16.1-16.1-25-37.5-25-60.3 0-47.1 38.3-85.3 85.3-85.3z"/></svg>
+          <button onclick="openPixModal()" class="hover:text-brand-green transition-colors flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-teal-600 fill-current shrink-0" viewBox="0 0 512 512">
+              <g fill="currentColor" fill-rule="evenodd">
+                <path d="M112.57 391.19c20.056 0 38.928-7.808 53.12-22l76.693-76.692c5.385-5.404 14.765-5.384 20.15 0l76.989 76.989c14.191 14.172 33.045 21.98 53.12 21.98h15.098l-97.138 97.139c-30.326 30.344-79.505 30.344-109.85 0l-97.415-97.416h9.232zm280.068-271.294c-20.056 0-38.929 7.809-53.12 22l-76.97 76.99c-5.551 5.53-14.6 5.568-20.15-.02l-76.711-76.693c-14.192-14.191-33.046-21.999-53.12-21.999h-9.234l97.416-97.416c30.344-30.344 79.523-30.344 109.867 0l97.138 97.138h-15.116z"/>
+                <path d="M22.758 200.753l58.024-58.024h31.787c13.84 0 27.384 5.605 37.172 15.394l76.694 76.693c7.178 7.179 16.596 10.768 26.033 10.768 9.417 0 18.854-3.59 26.014-10.75l76.989-76.99c9.787-9.787 23.331-15.393 37.171-15.393h37.654l58.3 58.302c30.343 30.344 30.343 79.523 0 109.867l-58.3 58.303H392.64c-13.84 0-27.384-5.605-37.171-15.394l-76.97-76.99c-13.914-13.894-38.172-13.894-52.066.02l-76.694 76.674c-9.788 9.788-23.332 15.413-37.172 15.413H80.782L22.758 310.62c-30.344-30.345-30.344-79.524 0-109.868"/>
+              </g>
+            </svg>
             <span>Pagar via PIX</span>
           </button>
           <a href="#localizacao" class="hover:text-brand-green transition-colors">Localização</a>
@@ -337,9 +328,14 @@
               <span class="text-[11px] font-black text-slate-800 uppercase font-display tracking-wider">Avaliar</span>
             </a>
             
-            <!-- Botão Chave PIX com ícone SVG Oficial -->
+            <!-- Botão Chave PIX com Ícone Oficial Perfeito -->
             <button onclick="openPixModal()" class="flex flex-col items-center justify-center p-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl transition-all text-center shadow-sm hover:scale-105">
-              <svg class="w-5 h-5 fill-current text-teal-600 mb-1" viewBox="0 0 512 512"><path d="M112.5 108.9c22.8 0 44.2 8.9 60.3 25l51.8 51.8 51.8-51.8c16.1-16.1 37.5-25 60.3-25 47 0 85.3 38.2 85.3 85.3 0 22.8-8.9 44.2-25 60.3l-51.8 51.8 51.8 51.8c16.1 16.1 25 37.5 25 60.3 0 47-38.2 85.3-85.3 85.3-22.8 0-44.2-8.9-60.3-25L224 326.6l-51.8 51.8c-16.1 16.1-37.5 25-60.3 25-47 0-85.3-38.2-85.3-85.3 0-22.8 8.9-44.2 25-60.3l51.8-51.8-51.8-51.8c-16.1-16.1-25-37.5-25-60.3 0-47.1 38.3-85.3 85.3-85.3z"/></svg>
+              <svg class="w-5 h-5 text-teal-600 fill-current shrink-0 mb-1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <g fill="currentColor" fill-rule="evenodd">
+                  <path d="M112.57 391.19c20.056 0 38.928-7.808 53.12-22l76.693-76.692c5.385-5.404 14.765-5.384 20.15 0l76.989 76.989c14.191 14.172 33.045 21.98 53.12 21.98h15.098l-97.138 97.139c-30.326 30.344-79.505 30.344-109.85 0l-97.415-97.416h9.232zm280.068-271.294c-20.056 0-38.929 7.809-53.12 22l-76.97 76.99c-5.551 5.53-14.6 5.568-20.15-.02l-76.711-76.693c-14.192-14.191-33.046-21.999-53.12-21.999h-9.234l97.416-97.416c30.344-30.344 79.523-30.344 109.867 0l97.138 97.138h-15.116z"/>
+                  <path d="M22.758 200.753l58.024-58.024h31.787c13.84 0 27.384 5.605 37.172 15.394l76.694 76.693c7.178 7.179 16.596 10.768 26.033 10.768 9.417 0 18.854-3.59 26.014-10.75l76.989-76.99c9.787-9.787 23.331-15.393 37.171-15.393h37.654l58.3 58.302c30.343 30.344 30.343 79.523 0 109.867l-58.3 58.303H392.64c-13.84 0-27.384-5.605-37.171-15.394l-76.97-76.99c-13.914-13.894-38.172-13.894-52.066.02l-76.694 76.674c-9.788 9.788-23.332 15.413-37.172 15.413H80.782L22.758 310.62c-30.344-30.345-30.344-79.524 0-109.868"/>
+                </g>
+              </svg>
               <span class="text-[11px] font-black text-slate-800 uppercase font-display tracking-wider">Chave PIX</span>
             </button>
 
@@ -392,69 +388,71 @@
       </div>
     </section>
 
-    <!-- CARROSSEL INFINITO DE MARCAS PARCEIRAS (IMAGENS DO REPOSITÓRIO) -->
+    <!-- CARROSSEL DE MARCAS COM ARRASTE E RETORNO AUTOMÁTICO -->
     <section id="marcas" class="w-full py-8 bg-white border-y border-slate-200 overflow-hidden shadow-inner">
-      <div class="max-w-6xl mx-auto px-5 mb-4 text-center">
-        <span class="text-[10px] uppercase tracking-[0.25em] text-brand-green font-bold font-badge block">// PROCEDÊNCIA GARANTIDA</span>
-        <h2 class="text-xl sm:text-2xl font-display font-black text-slate-900 uppercase tracking-wider">Trabalhamos Com As Melhores Marcas</h2>
+      <div class="max-w-6xl mx-auto px-5 mb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-1 text-center sm:text-left">
+        <div>
+          <span class="text-[10px] uppercase tracking-[0.25em] text-brand-green font-bold font-badge block">// PROCEDÊNCIA GARANTIDA</span>
+          <h2 class="text-xl sm:text-2xl font-display font-black text-slate-900 uppercase tracking-wider">Trabalhamos Com As Melhores Marcas</h2>
+        </div>
+        <span class="text-[10px] text-slate-400 font-mono"><i class="fa-solid fa-hand-pointer mr-1"></i> Arraste para navegar</span>
       </div>
 
-      <div class="relative w-full overflow-hidden">
-        <div class="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-        <div class="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+      <div class="relative w-full">
+        <div class="absolute left-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
         
-        <div class="animate-marquee items-center gap-4 py-2">
-          <!-- Bloco de Imagens das Marcas 1 -->
-          <div class="flex items-center gap-4 shrink-0">
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/shell.png" alt="Shell" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mobil.png" alt="Mobil" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/texaco.png" alt="Texaco / Havoline" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/castrol.png" alt="Castrol" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorcraft.svg" alt="Motorcraft" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/lubrax.png" alt="Lubrax" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/gtoil.png" alt="GT-Oil" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/maxiperformance.png" alt="Maxi Performance" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/evora.png" alt="Evora" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/radnaq.png" alt="Radnaq" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorfix.png" alt="Motorfix" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/blackbrasil.webp" alt="Black Brasil" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tirreno.png" alt="Tirreno" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/speed.png" alt="Speed" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wurth.webp" alt="Wurth" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tekbond.png" alt="Tekbond" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tecfil.png" alt="Tecfil" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mannfilter.png" alt="Mann-Filter" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wega.png" alt="Wega" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/japanparts.png" alt="Japanparts" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/bosch.svg" alt="Bosch" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mahle.png" alt="Mahle" class="h-9 max-w-[110px] object-contain"></div>
-          </div>
+        <!-- CARROSSEL INTERATIVO COM TOUCH/DRAG E AUTO-RETORNO -->
+        <div id="marcasCarousel" class="flex gap-4 overflow-x-auto scrollbar-hide py-2 px-5 select-none cursor-grab active:cursor-grabbing">
+          
+          <!-- Lista de Logos -->
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/shell.png" alt="Shell" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mobil.png" alt="Mobil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/texaco.png" alt="Texaco / Havoline" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/castrol.png" alt="Castrol" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorcraft.svg" alt="Motorcraft" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/lubrax.png" alt="Lubrax" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/gtoil.png" alt="GT-Oil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/maxiperformance.png" alt="Maxi Performance" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/evora.png" alt="Evora" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/radnaq.png" alt="Radnaq" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorfix.png" alt="Motorfix" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/blackbrasil.webp" alt="Black Brasil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tirreno.png" alt="Tirreno" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/speed.png" alt="Speed" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wurth.webp" alt="Wurth" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tekbond.png" alt="Tekbond" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tecfil.png" alt="Tecfil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mannfilter.png" alt="Mann-Filter" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wega.png" alt="Wega" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/japanparts.png" alt="Japanparts" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/bosch.svg" alt="Bosch" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mahle.png" alt="Mahle" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
 
-          <!-- Bloco de Imagens das Marcas 2 (Duplicado para efeito contínuo sem emendas) -->
-          <div class="flex items-center gap-4 shrink-0">
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/shell.png" alt="Shell" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mobil.png" alt="Mobil" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/texaco.png" alt="Texaco / Havoline" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/castrol.png" alt="Castrol" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorcraft.svg" alt="Motorcraft" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/lubrax.png" alt="Lubrax" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/gtoil.png" alt="GT-Oil" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/maxiperformance.png" alt="Maxi Performance" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/evora.png" alt="Evora" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/radnaq.png" alt="Radnaq" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorfix.png" alt="Motorfix" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/blackbrasil.webp" alt="Black Brasil" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tirreno.png" alt="Tirreno" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/speed.png" alt="Speed" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wurth.webp" alt="Wurth" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tekbond.png" alt="Tekbond" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tecfil.png" alt="Tecfil" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mannfilter.png" alt="Mann-Filter" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wega.png" alt="Wega" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/japanparts.png" alt="Japanparts" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/bosch.svg" alt="Bosch" class="h-9 max-w-[110px] object-contain"></div>
-            <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mahle.png" alt="Mahle" class="h-9 max-w-[110px] object-contain"></div>
-          </div>
+          <!-- Duplicado para loop de rolagem perfeito -->
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/shell.png" alt="Shell" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mobil.png" alt="Mobil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/texaco.png" alt="Texaco / Havoline" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/castrol.png" alt="Castrol" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorcraft.svg" alt="Motorcraft" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/lubrax.png" alt="Lubrax" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/gtoil.png" alt="GT-Oil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/maxiperformance.png" alt="Maxi Performance" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/evora.png" alt="Evora" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/radnaq.png" alt="Radnaq" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/motorfix.png" alt="Motorfix" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/blackbrasil.webp" alt="Black Brasil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tirreno.png" alt="Tirreno" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/speed.png" alt="Speed" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wurth.webp" alt="Wurth" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tekbond.png" alt="Tekbond" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/tecfil.png" alt="Tecfil" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mannfilter.png" alt="Mann-Filter" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/wega.png" alt="Wega" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/japanparts.png" alt="Japanparts" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/bosch.svg" alt="Bosch" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+          <div class="h-14 px-5 py-2.5 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0"><img src="https://raw.githubusercontent.com/joaovitorsouzadi/pereiratrocadeoleofiles/main/mahle.png" alt="Mahle" class="h-9 max-w-[110px] object-contain pointer-events-none"></div>
+
         </div>
       </div>
     </section>
@@ -608,7 +606,7 @@
       </div>
     </section>
 
-    <!-- NOVA SEÇÃO SOBRE NÓS / PROPRIETÁRIO -->
+    <!-- SEÇÃO SOBRE NÓS / PROPRIETÁRIO -->
     <section id="sobre" class="max-w-6xl mx-auto px-5 py-8 reveal">
       <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-xl flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
         
@@ -757,7 +755,12 @@
       <!-- Cabeçalho do Modal PIX -->
       <div class="p-4 flex items-center justify-between border-b border-slate-100 bg-slate-900 text-white">
         <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 fill-current text-teal-400" viewBox="0 0 512 512"><path d="M112.5 108.9c22.8 0 44.2 8.9 60.3 25l51.8 51.8 51.8-51.8c16.1-16.1 37.5-25 60.3-25 47 0 85.3 38.2 85.3 85.3 0 22.8-8.9 44.2-25 60.3l-51.8 51.8 51.8 51.8c16.1 16.1 25 37.5 25 60.3 0 47-38.2 85.3-85.3 85.3-22.8 0-44.2-8.9-60.3-25L224 326.6l-51.8 51.8c-16.1 16.1-37.5 25-60.3 25-47 0-85.3-38.2-85.3-85.3 0-22.8 8.9-44.2 25-60.3l51.8-51.8-51.8-51.8c-16.1-16.1-25-37.5-25-60.3 0-47.1 38.3-85.3 85.3-85.3z"/></svg>
+          <svg class="w-5 h-5 text-teal-400 fill-current shrink-0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor" fill-rule="evenodd">
+              <path d="M112.57 391.19c20.056 0 38.928-7.808 53.12-22l76.693-76.692c5.385-5.404 14.765-5.384 20.15 0l76.989 76.989c14.191 14.172 33.045 21.98 53.12 21.98h15.098l-97.138 97.139c-30.326 30.344-79.505 30.344-109.85 0l-97.415-97.416h9.232zm280.068-271.294c-20.056 0-38.929 7.809-53.12 22l-76.97 76.99c-5.551 5.53-14.6 5.568-20.15-.02l-76.711-76.693c-14.192-14.191-33.046-21.999-53.12-21.999h-9.234l97.416-97.416c30.344-30.344 79.523-30.344 109.867 0l97.138 97.138h-15.116z"/>
+              <path d="M22.758 200.753l58.024-58.024h31.787c13.84 0 27.384 5.605 37.172 15.394l76.694 76.693c7.178 7.179 16.596 10.768 26.033 10.768 9.417 0 18.854-3.59 26.014-10.75l76.989-76.99c9.787-9.787 23.331-15.393 37.171-15.393h37.654l58.3 58.302c30.343 30.344 30.343 79.523 0 109.867l-58.3 58.303H392.64c-13.84 0-27.384-5.605-37.171-15.394l-76.97-76.99c-13.914-13.894-38.172-13.894-52.066.02l-76.694 76.674c-9.788 9.788-23.332 15.413-37.172 15.413H80.782L22.758 310.62c-30.344-30.345-30.344-79.524 0-109.868"/>
+            </g>
+          </svg>
           <h4 class="font-display text-sm text-white font-black uppercase tracking-wider">Pagamento via PIX</h4>
         </div>
         <button onclick="closePixModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center transition-colors"><i class="fa-solid fa-xmark text-sm"></i></button>
@@ -1045,6 +1048,7 @@
 
       initScrollReveal();
       generateStoreCarousel();
+      initAutoInertiaScroll('marcasCarousel', 1.2); // Velocidade do carrossel de marcas com auto-retorno
       updateStatus();
       initScrollIndicatorListener();
       initFooterAvoidanceObserver();
@@ -1154,6 +1158,7 @@
       initAutoInertiaScroll('storeCarousel', 0.6);
     }
 
+    // MOTOR DE ROLAGEM AUTOMÁTICA COM SUPORTE A ARRASTE E RETORNO AUTOMÁTICO
     function initAutoInertiaScroll(id, speed = 0.6) {
       const el = document.getElementById(id);
       if (!el) return;
@@ -1198,7 +1203,7 @@
           isHoveredOrTouched = false;
           isDown = false;
           currentScroll = el.scrollLeft;
-        }, 1200);
+        }, 1200); // Aguarda 1.2 segundos e retoma a rolagem automática
       };
 
       el.addEventListener('mouseenter', stopAuto, { passive: true });
