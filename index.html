@@ -244,7 +244,7 @@
             <span class="inline">Salvar Contato</span>
           </button>
           
-          <button onclick="nativeShare()" class="p-2 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-brand-green flex items-center justify-center transition-all border border-slate-300 hover:scale-105 active:scale-95" title="Compartilhar / Baixar App">
+          <button onclick="openShareModal()" class="p-2 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-brand-green flex items-center justify-center transition-all border border-slate-300 hover:scale-105 active:scale-95" title="Compartilhar / Baixar App">
             <i class="fa-solid fa-share-nodes text-sm"></i>
           </button>
         </div>
@@ -839,7 +839,7 @@
     </div>
   </div>
 
-  <!-- MODAL COMPARTILHAR E INSTALAR APP -->
+  <!-- MODAL COMPARTILHAR E INSTALAR APP (COM TODAS AS OPÇÕES E O BOTÃO NATIVO) -->
   <div id="shareModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
     <div class="bg-white w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-slate-200 transform scale-95 transition-transform duration-300 font-sans max-h-[90vh] flex flex-col text-slate-800">
       
@@ -855,7 +855,7 @@
       <!-- Conteúdo do Modal -->
       <div class="p-5 overflow-y-auto space-y-4 text-xs font-sans">
         
-        <!-- BOTÃO DE COMPARTILHAMENTO NATIVO DO CELULAR (ABRE APPS DO CELULAR) -->
+        <!-- BOTÃO DE COMPARTILHAMENTO NATIVO DO CELULAR (ABRE OS APPS DO CELULAR) -->
         <button onclick="nativeShare()" class="w-full py-3.5 bg-slate-900 hover:bg-slate-800 text-brand-greenLight font-black text-xs uppercase tracking-wider rounded-2xl transition-all shadow-md flex items-center justify-center gap-2 font-display hover:scale-[1.01] active:scale-95">
           <i class="fa-solid fa-mobile-screen-button text-base"></i>
           <span>Compartilhar nos Apps do Celular (Nativo)</span>
@@ -950,6 +950,17 @@
             <img id="shareQrImg" src="" alt="QR Code Pereira" class="w-36 h-36 border-2 border-brand-green p-2 bg-white rounded-xl shadow">
             <span class="text-[9px] text-slate-500 font-mono">Aproxime a câmera do celular para abrir o site</span>
           </div>
+        </div>
+
+        <!-- LINKS DE REDES SOCIAIS E E-MAIL -->
+        <div class="grid grid-cols-2 gap-2">
+          <a id="shareFbLink" href="#" target="_blank" class="flex items-center justify-center gap-2 p-3 bg-[#1877F2] text-white rounded-xl font-black text-xs font-display transition-all hover:brightness-110 uppercase tracking-wider">
+            <i class="fa-brands fa-facebook-f text-base"></i> Facebook
+          </a>
+
+          <a id="shareEmailLink" href="#" class="flex items-center justify-center gap-2 p-3 bg-slate-800 text-white rounded-xl font-black text-xs font-display transition-all hover:bg-slate-700 uppercase tracking-wider">
+            <i class="fa-solid fa-envelope text-base"></i> Por E-mail
+          </a>
         </div>
 
         <!-- COPIAR LINK DO SITE -->
@@ -1095,6 +1106,8 @@
       
       const shareMsg = "Confira o site oficial da Pereira Troca de Óleo em Palmeiras de Goiás - GO!\n" + siteUrl;
       document.getElementById('shareWaLinkChoice').href = "https://api.whatsapp.com/send?text=" + encodeURIComponent(shareMsg);
+      document.getElementById('shareFbLink').href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(siteUrl);
+      document.getElementById('shareEmailLink').href = "mailto:?subject=" + encodeURIComponent("Pereira Troca de Óleo - Palmeiras de Goiás - GO") + "&body=" + encodeURIComponent(shareMsg);
     }
 
     function triggerPwaInstall() {
